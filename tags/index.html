@@ -517,7 +517,7 @@
 </div>
 <div class="powered-by">
 <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_uv"></span>次
+    本站总访问量<span id="busuanzi_value_page_pv"></span>次
 </span>
 
 
@@ -669,6 +669,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'tm50l9nkfm6fo0VVwN37PXVm-gzGzoHsz',
+        appKey: '1fVTEB7maa333E1Mzmeb8mxA',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
