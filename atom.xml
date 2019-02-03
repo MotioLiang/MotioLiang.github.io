@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MoitloLiang</title>
+  
+  <subtitle>motioliang.cn</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-02-03T14:47:00.487Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>MoitloLiang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>deepin15.9安装nginx</title>
+    <link href="http://yoursite.com/2019/02/03/nginx/"/>
+    <id>http://yoursite.com/2019/02/03/nginx/</id>
+    <published>2019-02-03T06:28:05.297Z</published>
+    <updated>2019-02-03T14:47:00.487Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一、使用wget命令下载&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -c https://nginx.org/download/nginx-1.15.0.tar.gz&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;二、配置&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;./configure&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;三、编译安装&lt;br&gt;1.安装&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;make&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;make install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="nginx" scheme="http://yoursite.com/categories/nginx/"/>
+    
+    
+      <category term="nginx" scheme="http://yoursite.com/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql对自增主键ID进行重新排序</title>
+    <link href="http://yoursite.com/2018/12/25/mysql-id/"/>
+    <id>http://yoursite.com/2018/12/25/mysql-id/</id>
+    <published>2018-12-24T16:00:00.000Z</published>
+    <updated>2019-02-03T09:13:41.084Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一、不清空数据&lt;br&gt;原理：删除原有的自增ID，重新建立新的自增ID。&lt;br&gt;1.删除原有主键:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ALTER TABLE `table_name` DROP `id`;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;2.添加新主键字段并设置主键:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ALTER TABLE `table_name` ADD &amp;apos;id&amp;apos; mediumint(6) PRIMARY KEY NOT NULL AUTO_INCREMENT FIRST;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript Standard Style VScode 配置</title>
+    <link href="http://yoursite.com/2018/11/10/vscode/"/>
+    <id>http://yoursite.com/2018/11/10/vscode/</id>
+    <published>2018-11-10T01:22:00.000Z</published>
+    <updated>2019-02-03T09:13:00.198Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Javascript Standard Style VScode 配置&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>web worker简易入门</title>
+    <link href="http://yoursite.com/2018/09/25/web-worker-learning/"/>
+    <id>http://yoursite.com/2018/09/25/web-worker-learning/</id>
+    <published>2018-09-25T02:55:00.000Z</published>
+    <updated>2019-02-03T14:47:47.872Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;js是单线程的语言，由于此特性，我们在处理并发时需要用到一些技巧，如setTimeout()，setInterval()，调用XMLHttpRequest等。&lt;br&gt;但这里的并发只是非阻塞（参照John Resig的文章&lt;a href=&quot;http://ejohn.org/blog/how-javascript-timers-work/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How JavaScript Timers Work&lt;/a&gt;），真正的多线程编程则需要HTML5的web worker。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+      <category term="html5" scheme="http://yoursite.com/tags/html5/"/>
+    
+  </entry>
+  
+</feed>
