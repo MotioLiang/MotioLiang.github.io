@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[GIT新建分支并推送到远程仓库]]></title>
     <url>%2F2019%2F02%2F24%2Fgit%2F</url>
-    <content type="text"><![CDATA[12345678910111213git init //初始化版本库git remote add origin 你的远程库地址 // 把本地库与远程库关联git checkout master //切换到基础分支，如主干git checkout -b panda //创建并切换到新分支[panda]git add . // 添加文件到版本库（只是添加到缓存区），.代表添加文件夹下所有文件 git commit -m &quot;first commit&quot; // 把添加的文件提交到版本库，并填写提交备注git push origin panda / 推送到远程仓库]]></content>
+    <content type="text"><![CDATA[12345678910111213git init //初始化版本库git remote add origin 你的远程库地址 // 把本地库与远程库关联git checkout master //切换到基础分支，如主干git checkout -b panda //创建并切换到新分支[panda]git add . // 添加文件到版本库（只是添加到缓存区），.代表添加文件夹下所有文件 git commit -m &quot;first commit&quot; // 把添加的文件提交到版本库，并填写提交备注git push origin panda / 推送到远程仓库[panda]]]></content>
       <tags>
         <tag>git</tag>
       </tags>
