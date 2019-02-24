@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[GIT新建分支并推送到远程仓库]]></title>
+    <url>%2F2019%2F02%2F24%2Fgit%2F</url>
+    <content type="text"><![CDATA[12345678910111213git init //初始化版本库git remote add origin 你的远程库地址 // 把本地库与远程库关联git checkout master //切换到基础分支，如主干git checkout -b panda //创建并切换到新分支[panda]git add . // 添加文件到版本库（只是添加到缓存区），.代表添加文件夹下所有文件 git commit -m &quot;first commit&quot; // 把添加的文件提交到版本库，并填写提交备注git push origin panda / 推送到远程仓库]]></content>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[deepin15.9安装nginx]]></title>
     <url>%2F2019%2F02%2F03%2Fnginx%2F</url>
     <content type="text"><![CDATA[一、使用wget命令下载1wget -c https://nginx.org/download/nginx-1.15.0.tar.gz 二、配置1./configure 三、编译安装1.安装12makemake install 2.查看安装路径1whereis nginx 四、启动停止nginx12345cd /user/local/nginx/sbin/./nginx./nginx -s stop./nginx -s quit./nginx -s reload ./nginx -s quit:此方式停止步骤是待nginx进程处理任务完毕进行停止。./nginx -s stop:此方式相当于先查出nginx进程id再使用kill命令强制杀掉进程。 五、查询nginx进程1ps aux|grep nginx 六、重启nginx 1.先停止再启动（推荐）：对 nginx 进行重启相当于先停止再启动，即先执行停止命令再执行启动命令。如下：12./nginx -s quit./nginx 2.重新加载配置文件：当 ngin x的配置文件 nginx.conf 修改后，要想让配置生效需要重启 nginx，使用-s reload不用先停止 nginx 再启动 nginx 即可将配置信息在 nginx 中生效，如下：1./nginx -s reload 七、开机自启动 即在rc.local增加启动代码就可以了。1vi /etc/rc.local 增加一行 /usr/local/nginx/sbin/nginx设置执行权限：1chmod 755 rc.local]]></content>
