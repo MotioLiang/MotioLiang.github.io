@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-09T15:18:34.565Z</updated>
+  <updated>2019-04-11T12:16:12.985Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,18 +21,13 @@
     <link href="http://yoursite.com/2019/04/09/nuxt-env/"/>
     <id>http://yoursite.com/2019/04/09/nuxt-env/</id>
     <published>2019-04-09T15:15:21.942Z</published>
-    <updated>2019-04-09T15:18:34.565Z</updated>
+    <updated>2019-04-11T12:16:12.985Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;1.在根目录下新建env.js文件&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
+      &lt;p&gt;1.在根目录下新建env.js文件&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;export default &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  dev: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    MODE: &amp;apos;develpment&amp;apos;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ENV_API: &amp;apos;http://jsonplaceholder.typicode.com&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  pro: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    MODE: &amp;apos;production&amp;apos;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ENV_API: &amp;apos;http://jsonplaceholder.typicode.com/110&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;2.在nuxt.config.js中&lt;br&gt;
     
     </summary>
     
