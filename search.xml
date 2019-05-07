@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[es6原生实现观察者模式]]></title>
+    <url>%2F2019%2F05%2F07%2Fproxy%2F</url>
+    <content type="text"><![CDATA[使用Proxy实现观察者模式观察者模式（Observer mode）指的是函数自动观察数据对象，一旦对象有变化，函数就会自动执行。 1234567891011const person = observable(&#123; name: &apos;张三&apos;, age: 22&#125;)function print() &#123; console.log(&apos;姓名：&apos;, person.name, &apos;年龄：&apos;, person.age)&#125;observe(print)person.name = &apos;李四&apos; 上面代码中，数据person是观察目标，函数print是观察者，一旦对象发生变化，print就会自动执行。 下面，使用Proxy写一个观察者模式的最简单实现，即实现observable和observe这两个函数。思路是obervable函数返回一个原始对象的Proxy代理，拦截赋值操作，触发充当观察者的各个函数。 123456789const queuedObservers = new Set()const observe = fn =&gt; queuedObservers.add(fn)const observable = obj =&gt; new Proxy(obj, &#123; set &#125;)function set(target, key, value, receiver) &#123; const result = Reflect.set(target, key, value, receiver) queuedObservers.forEach(observe =&gt; observe()) return result&#125; 上面代码中，先定义了一个Set集合，所有的观察者函数都放进这个集合，然后，observable函数返回原始函数对象的代理，拦截赋值操作。拦截函数set之中，会自动执行所有的观察者。]]></content>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[nuxt 配置环境变量]]></title>
     <url>%2F2019%2F04%2F09%2Fnuxt-env%2F</url>
     <content type="text"><![CDATA[1.在根目录下新建env.js文件 12345678910export default &#123; dev: &#123; MODE: &apos;develpment&apos;, ENV_API: &apos;http://jsonplaceholder.typicode.com&apos; &#125;, pro: &#123; MODE: &apos;production&apos;, ENV_API: &apos;http://jsonplaceholder.typicode.com/110&apos; &#125;&#125; 2.在nuxt.config.js中 12345678import env from &apos;./env&apos;export default &#123; env: &#123; baseUrl: env[process.env.MODE].ENV_API &#125;&#125; 3.修改packages.json 12345678&quot;scripts&quot;: &#123; &quot;dev&quot;: &quot;cross-env MODE=dev nuxt&quot;, &quot;build&quot;: &quot;cross-env MODE=pro nuxt build&quot;, &quot;start&quot;: &quot;cross-env MODE=pro nuxt start&quot;, &quot;generate&quot;: &quot;cross-env MODE=pro nuxt generate&quot;, &quot;lint&quot;: &quot;eslint --ext .js,.vue --ignore-path .gitignore .&quot;, &quot;precommit&quot;: &quot;npm run lint&quot; &#125;,]]></content>

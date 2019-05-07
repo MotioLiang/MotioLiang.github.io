@@ -85,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="js,">
 
 
 
@@ -98,16 +98,18 @@
 
 
 
-<meta name="description" content="胡编一通，乱写一气">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MoitloLiang">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+<meta name="description" content="使用Proxy实现观察者模式观察者模式（Observer mode）指的是函数自动观察数据对象，一旦对象有变化，函数就会自动执行。 1234567891011const person = observable(&amp;#123;    name: &amp;apos;张三&amp;apos;,    age: 22&amp;#125;)function print() &amp;#123;    console.log(&amp;apos;姓">
+<meta name="keywords" content="js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="es6原生实现观察者模式">
+<meta property="og:url" content="http://yoursite.com/2019/05/07/proxy/index.html">
 <meta property="og:site_name" content="MoitloLiang">
-<meta property="og:description" content="胡编一通，乱写一气">
+<meta property="og:description" content="使用Proxy实现观察者模式观察者模式（Observer mode）指的是函数自动观察数据对象，一旦对象有变化，函数就会自动执行。 1234567891011const person = observable(&amp;#123;    name: &amp;apos;张三&amp;apos;,    age: 22&amp;#125;)function print() &amp;#123;    console.log(&amp;apos;姓">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-05-07T12:49:15.952Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MoitloLiang">
-<meta name="twitter:description" content="胡编一通，乱写一气">
+<meta name="twitter:title" content="es6原生实现观察者模式">
+<meta name="twitter:description" content="使用Proxy实现观察者模式观察者模式（Observer mode）指的是函数自动观察数据对象，一旦对象有变化，函数就会自动执行。 1234567891011const person = observable(&amp;#123;    name: &amp;apos;张三&amp;apos;,    age: 22&amp;#125;)function print() &amp;#123;    console.log(&amp;apos;姓">
 
 
 
@@ -137,7 +139,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2018/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/07/proxy/">
 
 
 
@@ -152,7 +154,7 @@
   daovoice('update');
   </script>
 
-  <title>归档 | MoitloLiang</title>
+  <title>es6原生实现观察者模式 | MoitloLiang</title>
   
 
 
@@ -171,7 +173,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -297,142 +299,205 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/07/proxy/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MoitloLiang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/name.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MoitloLiang">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">es6原生实现观察者模式</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-07T19:24:06+08:00">
+                2019-05-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 9 篇日志。 继续努力。
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/05/07/proxy/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/07/proxy/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/25/mysql-id/" itemprop="url">
+          
+            <div class="post-wordcount">
               
-                <span itemprop="name">mysql对自增主键ID进行重新排序</span>
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  295
+                </span>
               
-            </a>
-        
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-25T00:00:00+08:00" content="2018-12-25">
-          12-25
-        </time>
-      </div>
+              
+                <span class="post-meta-divider">|</span>
+              
 
-    </header>
-  </article>
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
 
+          
 
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/10/vscode/" itemprop="url">
-              
-                <span itemprop="name">Javascript Standard Style VScode 配置</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-10T09:22:00+08:00" content="2018-11-10">
-          11-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/25/web-worker-learning/" itemprop="url">
-              
-                <span itemprop="name">web worker简易入门</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-09-25T10:55:00+08:00" content="2018-09-25">
-          09-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h4 id="使用Proxy实现观察者模式"><a href="#使用Proxy实现观察者模式" class="headerlink" title="使用Proxy实现观察者模式"></a>使用Proxy实现观察者模式</h4><p>观察者模式（Observer mode）指的是函数自动观察数据对象，一旦对象有变化，函数就会自动执行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const person = observable(&#123;</span><br><span class="line">    name: &apos;张三&apos;,</span><br><span class="line">    age: 22</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">function print() &#123;</span><br><span class="line">    console.log(&apos;姓名：&apos;, person.name, &apos;年龄：&apos;, person.age)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">observe(print)</span><br><span class="line">person.name = &apos;李四&apos;</span><br></pre></td></tr></table></figure>
+<p>上面代码中，数据<strong>person</strong>是观察目标，函数<strong>print</strong>是观察者，一旦对象发生变化，<strong>print</strong>就会自动执行。</p>
+<p>下面，使用<strong>Proxy</strong>写一个观察者模式的最简单实现，即实现<strong>observable</strong>和<strong>observe</strong>这两个函数。思路是<strong>obervable</strong>函数返回一个原始对象的Proxy代理，拦截赋值操作，触发充当观察者的各个函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const queuedObservers = new Set()</span><br><span class="line">const observe = fn =&gt; queuedObservers.add(fn)</span><br><span class="line"></span><br><span class="line">const observable = obj =&gt; new Proxy(obj, &#123; set &#125;)</span><br><span class="line">function set(target, key, value, receiver) &#123;</span><br><span class="line">    const result = Reflect.set(target, key, value, receiver)</span><br><span class="line">    queuedObservers.forEach(observe =&gt; observe())</span><br><span class="line">    return result</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面代码中，先定义了一个<strong>Set</strong>集合，所有的观察者函数都放进这个集合，然后，<strong>observable</strong>函数返回原始函数对象的代理，拦截赋值操作。拦截函数<strong>set</strong>之中，会自动执行所有的观察者。</p>
 
       
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+      <div>
+        
+          <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+        
+      </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"><i class="fa fa-tag"></i> js</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/09/nuxt-env/" rel="next" title="nuxt 配置环境变量">
+                <i class="fa fa-chevron-left"></i> nuxt 配置环境变量
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -440,6 +505,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -460,8 +532,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -584,6 +665,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用Proxy实现观察者模式"><span class="nav-number">1.</span> <span class="nav-text">使用Proxy实现观察者模式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -726,6 +823,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
